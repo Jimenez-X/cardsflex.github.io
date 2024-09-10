@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 380px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.card h3 {
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card p {
+  text-align: center;
+  color: #777;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card:nth-child(1) .price {
+  color: #3498db; 
+}
+
+.card:nth-child(2) .price {
+  color: #e67e22; 
+}
+
+.card:nth-child(3) .price {
+  color: #e74c3c; 
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card .rating {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffcc00;
+  text-align: center;
+}
+
+.card:nth-child(1) .add-to-cart {
+  background-color: #3498db; 
+}
+
+.card:nth-child(2) .add-to-cart {
+  background-color: #e67e22; 
+}
+
+.card:nth-child(3) .add-to-cart {
+  background-color: #e74c3c; 
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+
+.add-to-cart:hover {
+  opacity: 0.9;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5), -8px -8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .price {
+  color: white;
+}
+
+.card:hover .add-to-cart {
+  background-color: #ff6b6b;
+}
+
+
+
+
